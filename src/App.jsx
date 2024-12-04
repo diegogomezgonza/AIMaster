@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { getHelloMessage } from './api';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
-  const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    getHelloMessage().then((data) => setMessage(data.message));
-  }, []);
-
   return (
-    <div>
-      <h1>React + Flask</h1>
-      <p>Mensaje desde el backend: {message}</p>
-    </div>
+    <Router>
+      <Routes>
+        {/* Home */}
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
