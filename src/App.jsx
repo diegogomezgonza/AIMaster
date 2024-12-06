@@ -5,6 +5,7 @@ import IF from './pages/IF';
 import Truthfullness from './pages/Truthfullness';
 import WS from './pages/WS';
 import OQ from './pages/OQ';
+
 function App() {
   return (
     <Router>
