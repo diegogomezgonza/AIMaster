@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+//Component for each section
+import GridCard from '../components/gridCard';
 
 function Home() {
   return (
@@ -15,30 +17,44 @@ function Home() {
       <h2 className="text-2xl font-semibold text-gray-700 mb-6 text-center">First steps</h2>
 
       <div className="grid grid-cols-2 gap-6 w-full max-w-4xl px-4">
-        {/*Instruction Following */}
-        <div className="bg-white shadow-md rounded-lg p-6 hover:bg-blue-500 hover:text-white transition duration-300">
-          <h3 className="text-xl font-semibold text-gray-700">Instruction Following</h3>
-          <p className="text-gray-600">Evaluating how well an AI follows instructions.</p>
-        </div>
+        {/* Instruction Following */}
+        <GridCard
+          title="Instruction Following"
+          description="Evaluating how well an AI follows instructions."
+          hoverColor="bg-blue-500"
+          link="/instruction-following"
+        />
 
-        {/*Truthfulness */}
-        <div className="bg-white shadow-md rounded-lg p-6 hover:bg-green-500 hover:text-white transition duration-300">
-          <h3 className="text-xl font-semibold text-gray-700">Truthfulness</h3>
-          <p className="text-gray-600">Assessing the accuracy and truthfulness of AI responses.</p>
-        </div>
+        {/* Truthfullness */}
+        <GridCard
+          title="Truthfulness"
+          description="Assessing the accuracy and truthfulness of AI responses."
+          hoverColor="bg-green-500"
+          link="/Truthfullness"
+        />
 
-        {/*Writing Style */}
-        <div className="bg-white shadow-md rounded-lg p-6 hover:bg-yellow-500 hover:text-white transition duration-300">
-          <h3 className="text-xl font-semibold text-gray-700">Writing Style</h3>
-          <p className="text-gray-600">Evaluating the writing style and readability of AI text.</p>
-        </div>
+        {/* Writing Style */}
+        <GridCard
+          title="Writing Style"
+          description="Evaluating the writing style and readability of AI text."
+          hoverColor="bg-yellow-500"
+          link="/writing-style"
+        />
 
-        {/*Overall Quality */}
-        <div className="bg-white shadow-md rounded-lg p-6 hover:bg-purple-500 hover:text-white transition duration-300">
-          <h3 className="text-xl font-semibold text-gray-700">Overall Quality</h3>
-          <p className="text-gray-600">A comprehensive evaluation of the AI's overall response quality.</p>
-        </div>
+        {/* Overall Quality */}
+        <GridCard
+          title="Overall Quality"
+          description="A comprehensive evaluation of the AI's overall response quality."
+          hoverColor="bg-purple-500"
+          link="/overall-quality"
+        />
       </div>
+
+      {/* Social media*/}
+      <div className='font-semibold'>
+      <p>@diegogomezgonza</p>
+      </div>
+      
     </div>
   );
 }
