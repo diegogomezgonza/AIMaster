@@ -38,9 +38,9 @@ function Home() {
           link="/Truthfullness"
         />
 
-        {/* Writing Style */}
+        {/* Writing Style and tone */}
         <GridCard
-          title="Writing Style"
+          title="Writing Style And Tone"
           description="Evaluating the writing style and readability of AI text."
           hoverColor="hover:bg-yellow-500"
           link="/writing-style"
