@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 //Component for each section
-import GridCard from "../components/gridCard";
+import GridCard from "../components/home/gridCard";
 //Component for social media (LinkedIn)
-import SocialMedia from "../components/socialMedia";
+import SocialMedia from "../components/home/socialMedia";
 
 function Home() {
   return (

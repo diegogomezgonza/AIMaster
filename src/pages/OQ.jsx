@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import BackButton from "../components/utils/buttons/backButton";
+import Response from "../components/utils/response";
+import Prompt from "../components/utils/prompt";
 function OQ() {
   const navigate = useNavigate();
 
@@ -10,22 +12,8 @@ function OQ() {
       data-barba="container"
       data-barba-namespace="overall-quality"
     >
-      <button
-        onClick={() => navigate("/")}
-        className="absolute top-4 left-4 p-2 bg-gray-100 rounded-full shadow hover:bg-gray-200"
-        aria-label="Go back"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6 text-gray-700"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
+      {/* Botón de flecha */}
+      <BackButton/>
 
       <h1 className="text-4xl font-bold text-gray-800 mb-8">Overall Quality</h1>
       <div className="w-full max-w-4xl bg-white shadow-md rounded-lg p-6">
@@ -39,10 +27,10 @@ function OQ() {
         </div>
 
         <div className="mb-6">
-          <h2 className="text-xl font-semibold text-gray-700">Example Scenario</h2>
-          <p className="mt-2 text-gray-600 border border-gray-300 rounded-md p-4 bg-gray-50">
-            **Prompt:** Summarize the plot of the book "To Kill a Mockingbird."
-          </p>
+        <Prompt
+          title="Prompt:"
+          content="Summarize the plot of the book To Kill a Mockingbird."
+        />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
             {/* Response A */}
             <div className="bg-red-100 border border-red-300 rounded-md p-4">
