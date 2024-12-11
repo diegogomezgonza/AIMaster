@@ -1,5 +1,5 @@
 # AIMaster
-In this project, I will help you to evaluate AI responses based on real characteristics that I work with. The goal of AIMaster is to provide tools and resources for assessing AI responses effectively, with a focus on key attributes like instruction following, truthfulness, writing style, and overall quality.
+In this project, I will help you to evaluate AI responses based on real characteristics that I work with. The goal is to provide tools and resources for assessing AI responses effectively, with a focus on key attributes like instruction following, truthfulness, writing style, and overall quality.
 
 # Technologies Used
 1. React
